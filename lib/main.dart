@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_new/screens/cart_screen.dart';
 import 'screens/product_overview_screen.dart';
 import 'screens/product_detail.dart';
 import 'package:provider/provider.dart';
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
 				),
 				home: ProductOverviewScreen(),
 				routes: {
-					ProductDetailScreen.routeName : (ctx)=> ProductDetailScreen()
+					ProductDetailScreen.routeName : (ctx)=> ProductDetailScreen(),
+					CartScreen.routeName : (ctx) => CartScreen()
 				},
 			),
 		);
